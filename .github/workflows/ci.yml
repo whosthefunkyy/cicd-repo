@@ -1,19 +1,16 @@
-name: First CI
+name: CICDPro
 
-on:
-  push:
-    branches:
-      - main
-
+on: [push]
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Run simple command
+    steps:   
+      - uses: actions/checkout@v4
+        name: Run script
+      - name: Say hello
+        run: echo "Hello"
+          
+      - name: Open check
         run: |
-          echo "Hello from GitHub Actions"
-          uname -a
+           ls -la
+           pwd
