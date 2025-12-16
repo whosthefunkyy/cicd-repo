@@ -11,7 +11,7 @@ jobs:
       - name: Create folder
         run: mkdir POPOCHKA
       - name: Check pwd
-        run:  |
+        run: |
           ls la
           pwd
       
