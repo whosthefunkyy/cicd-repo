@@ -3,16 +3,6 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps: 
-      - uses: actions/checkout@v4
-      
-      - name: Say Hello
-        run: echo "Hello"
-      - name: Create folder
-        run: mkdir POPOCHKA
-      - name: Check pwd
-        run: |
-          ls -la
-          pwd
-      
-      
+    steps:
+      - name: Say hello
+        run: echo "hello"
