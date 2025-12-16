@@ -1,16 +1,18 @@
-name: CICDPro
-
+name: Popa
 on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:   
+    steps: 
       - uses: actions/checkout@v4
-        name: Run script
-      - name: Say hello
+      
+      - name: Say Hello
         run: echo "Hello"
-          
-      - name: Open check
-        run: |
-           ls -la
-           pwd
+      - name: Create folder
+        run: mkdir POPOCHKA
+      - name: Check pwd
+        run:  |
+          ls la
+          pwd
+      
+      
